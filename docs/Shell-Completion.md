@@ -23,6 +23,7 @@ then
     for COMPLETION in "${HOMEBREW_PREFIX}/etc/bash_completion.d/"*
     do
       [[ -r "${COMPLETION}" ]] && source "${COMPLETION}"
+eval "$(/opt/homebrew/bin/brew shellenv)"
     done
   fi
 fi
